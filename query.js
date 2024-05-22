@@ -8,3 +8,13 @@ const pool = new Pool({
   password: process.env.PASSWORD,
   port: process.env.PORT,
 })
+
+// GET: /users | getUsers()
+
+// GET: /users/:id | getUserById()
+
+// POST: /users | createUser()
+
+// PUT: /users/:id | updateUser()
+
+// DELETE: /users/:id | deleteUser()
