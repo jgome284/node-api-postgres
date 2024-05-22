@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "node-api-postgres",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
