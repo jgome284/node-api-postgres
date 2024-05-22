@@ -36,6 +36,8 @@ const createUser = (request, response) => {
   pool.query('INSERT INTO users (name, email) VALUES ($1, $2) RETURNING *', [name, email], (error, results) => {
     if (error) {
       throw error
+    } else if (!Array.isArray(results.rows) || results.rows.length < 1) {
+    	throw error
     }
     response.status(201).send(`User added with ID: ${results.rows[0].id}`)
   })
